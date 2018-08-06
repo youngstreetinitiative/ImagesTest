@@ -204,7 +204,8 @@ image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA (2017) Graph 2.8 Ho
 
 # FUNCTION USAGE
 
-```{r}
+```{r, echo=F}
+knitr::opts_chunk$set(fig.align = "left")
 path <- "imgs/YSI.png"
 ```
 
