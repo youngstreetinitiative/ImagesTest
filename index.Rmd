@@ -2,7 +2,7 @@
 title: "4. Easy Credit"
 author: "Jackson Whitehair"
 date: "`r Sys.Date()`"
-output: 
+output:
   html_document:
     toc: true
     toc_depth: 3
@@ -14,7 +14,10 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=F, message=F, warning=F)
+knitr::opts_chunk$set(echo = F, message = F, warning = F, fig.align = "center")
+library(ImagesTest)
+
+default_width <- 15 #cm
 
 ```
 <div style="position: fixed; top: 0; right: 0;">
@@ -28,14 +31,19 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F)
 
 ## Mortgage Finance to GDP Ratio
 
-![](4_Easy_Credit/UBS (2017Sep) Figure 31 Mortgage Debt to GDP 1860 to 2016.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/UBS (2017Sep) Figure 31 Mortgage Debt to GDP 1860 to 2016.png")
+```
 
 *UBS Survey of recent mortgage holders* - [UBS 13/09/2017](http://www.austmm.com/2017/09/13/ubs-survey-of-recent-mortgage-holders/)
 
 
 ## Net Interest Margins
 
-![](4_Easy_Credit/RBA_2018Jul_ChartPack major-banks-net-interest-margin.jpg)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA_2018Jul_ChartPack major-banks-net-interest-margin.jpg")
+```
+
 
 RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/banking-indicators.html)
 
@@ -48,7 +56,11 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 
 
 
-![](4_Easy_Credit/DFA (2018Jan) Bank of Mum and Dad 2.jpg) 
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/DFA (2018Jan) Bank of Mum and Dad 2.jpg")
+```
+
+
 
 *Bank of Mum and Dad Now A “Top 10” Lender* - Digital Finance Analytics [17/1/2018](http://digitalfinanceanalytics.com/blog/tag/bank-of-mum-and-dad/)
 
@@ -56,7 +68,11 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 
 ## Major Bank Lending for Interest-Only Loans
 
-![](4_Easy_Credit/AFR (2017May) Major bank mortgage books.png) 
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/AFR (2017May) Major bank mortgage books.png")
+```
+
+
 
 *Interest-only loans could be 'Australia's sub-prime'* - [AFR 19/05/2017](http://www.afr.com/business/banking-and-finance/interestonly-loans-could-be-australias-subprime-20170519-gw939m)
 
@@ -65,14 +81,22 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 ### Owner-Occupier vs Investor
 
 
-![](4_Easy_Credit/ASIC (2015) Proportion of interest-only loans owner-occupier and investor.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/ASIC (2015) Proportion of interest-only loans owner-occupier and investor.png")
+```
+
+
 
 *Review of interest-only home loans* - [ASIC August 2015](http://asic.gov.au/about-asic/media-centre/find-a-media-release/2015-releases/15-220mr-lenders-to-improve-standards-following-interest-only-loan-review/)
 
 ### Types of Investors
 
 
-![](4_Easy_Credit/Citi (2017Oct) Investor lending using interest only finance.jpg)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/Citi (2017Oct) Investor lending using interest only finance.jpg")
+```
+
+
 
 *This housing expert thinks Australian investors may be heading towards the 'cliff edge' on loan repayments* - Business Insider [Citi 13/10/2017](https://www.businessinsider.com.au/this-housing-expert-thinks-australian-investors-may-be-heading-towards-the-cliff-edge-on-loan-repayments-2017-10)
 
@@ -83,13 +107,21 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 ## Proportion Converting
 
 
-![](4_Easy_Credit/RBA (2018Apr) Graph 4 Interest-only Period Expiry Proportions.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA (2018Apr) Graph 4 Interest-only Period Expiry Proportions.png")
+```
+
+
 
 *The Limits of Interest-Only Lending* - Christopher Kent Address to the Housing Industry Association Breakfast, Reserve Bank of Australia, [RBA 24/04/2018](http://www.rba.gov.au/speeches/2018/sp-ag-2018-04-24.html)
 
 ### Amount Converting to Principal and Interest
 
-![](4_Easy_Credit/RBA (2018Apr) Graph 5 Interest-only Period Expiry.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA (2018Apr) Graph 5 Interest-only Period Expiry.png")
+```
+
+
 
 *The Limits of Interest-Only Lending* - Christopher Kent Address to the Housing Industry Association Breakfast, Reserve Bank of Australia, [RBA 24/04/2018](http://www.rba.gov.au/speeches/2018/sp-ag-2018-04-24.html)
 
@@ -102,13 +134,21 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 ### Mortgage Applications Not Factually Accurate
 
 
-![](4_Easy_Credit/UBS (2017Sep) Figure 5 Factual Accuracy of mortgagee reporting.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/UBS (2017Sep) Figure 5 Factual Accuracy of mortgagee reporting.png")
+```
+
+
 
 *UBS Survey of recent mortgage holders* - [UBS 13/09/2017](http://www.austmm.com/2017/09/13/ubs-survey-of-recent-mortgage-holders/)
 
 ### Magnitude of Factual Inaccuracy
 
-![](4_Easy_Credit/UBS (2017Sep) Figure 14 Extent of misrepresentation of mortgagee reporting.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/UBS (2017Sep) Figure 14 Extent of misrepresentation of mortgagee reporting.png")
+```
+
+
 
 *UBS Survey of recent mortgage holders* - [UBS 13/09/2017](http://www.austmm.com/2017/09/13/ubs-survey-of-recent-mortgage-holders/)
 
@@ -129,14 +169,22 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 ## Arrears Rates
 
 
-![](4_Easy_Credit/RBA (2017) Graph 2.7 Banks' Non-performing Housing Loans.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA (2017) Graph 2.7 Banks' Non-performing Housing Loans.png")
+```
+
+
 
 *Financial Stability Review 2017, Section 2. Household and Business Finances* - [RBA October 2017](http://www.rba.gov.au/publications/fsr/2017/oct/)
 
 ## Applications for Property Possessions
 
 
-![](4_Easy_Credit/RBA (2018) Graph 8 Applications for Property Possession.png)
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA (2018) Graph 8 Applications for Property Possession.png")
+```
+
+
 
 *Household Indebtedness and Mortgage Stress* - Michele Bullock Address to the Responsible Lending and Borrowing Summit [RBA 20/2/2018](https://www.rba.gov.au/speeches/2018/sp-ag-2018-02-20.html)
 
@@ -144,8 +192,128 @@ RBA Chart Pack [Banking Indicators 28/6/2018](https://www.rba.gov.au/chart-pack/
 
 
 
-![](4_Easy_Credit/RBA (2017) Graph 2.8 Household Mortgage Buffers.png) 
+```{r}
+image_fixer(fig_width_cm = default_width, "4_Easy_Credit/RBA (2017) Graph 2.8 Household Mortgage Buffers.png")
+```
+
+
 
 *Financial Stability Review 2017, Section 2. Household and Business Finances* - [RBA October 2017](http://www.rba.gov.au/publications/fsr/2017/oct/)
+
+
+
+# FUNCTION USAGE
+
+```{r}
+path <- "imgs/YSI.png"
+```
+
+## Functions
+
+Both functions have the same usage:
+```{r}
+image_fixer(path)
+ImageFixer(path)
+```
+
+> _path_ Character, file path to img as string.
+> _fig_width_cm_ Numeric, number in cm of width desired.
+
+
+## As Is
+```{r}
+image_fixer(path)
+```
+
+
+##  Smaller
+```{r}
+image_fixer(path, 1)
+```
+
+
+##  Larger
+```{r}
+image_fixer(path, 10)
+```
+
+##  Larger and Centred
+
+- Chunk option: `fig.align="center"`
+
+```{r, fig.align="center"}
+image_fixer(path, 10)
+```
+
+
+
+
+
+# AFR example
+
+```{r}
+path <- "4_Easy_Credit/AFR (2014Jun) Prices indexed to incomes and borrowing capacity.jpg"
+```
+
+
+## As Is
+```{r}
+image_fixer(path)
+```
+
+
+##  Smaller
+```{r}
+image_fixer(path, 1)
+```
+
+
+##  Larger
+```{r}
+image_fixer(path, 10)
+```
+
+##  Larger and Centred
+
+- Chunk option: `fig.align="center"`
+
+```{r, fig.align="center"}
+image_fixer(path, 10)
+```
+
+
+
+## RBA example
+
+```{r}
+path <- "4_Easy_Credit/RBA_2018Jul_ChartPack major-banks-net-interest-margin.jpg"
+```
+
+
+## As Is
+```{r}
+image_fixer(path)
+```
+
+
+##  Smaller
+```{r}
+image_fixer(path, 1)
+```
+
+
+##  Larger
+```{r}
+image_fixer(path, 10)
+```
+
+##  Larger and Centred
+
+- Chunk option: `fig.align="center"`
+
+```{r, fig.align="center"}
+image_fixer(path, 10)
+```
+
 
 

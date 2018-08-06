@@ -1,0 +1,118 @@
+---
+title: "Untitled"
+author: "Ross"
+date: "01/08/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ImagesTest)
+
+```
+
+# YSI Logo
+
+```{r}
+path <- "imgs/YSI.png"
+```
+
+
+## As Is
+```{r}
+image_fixer(path)
+```
+
+
+##  Smaller
+```{r}
+image_fixer(path, 1)
+```
+
+
+##  Larger
+```{r}
+image_fixer(path, 10)
+```
+
+##  Larger and Centred
+
+- Chunk option: `fig.align="center"`
+
+```{r, fig.align="center"}
+image_fixer(path, 10)
+```
+
+
+
+
+
+# AFR example
+
+```{r}
+path <- "4_Easy_Credit/AFR (2014Jun) Prices indexed to incomes and borrowing capacity.jpg"
+```
+
+
+## As Is
+```{r}
+image_fixer(path)
+```
+
+
+##  Smaller
+```{r}
+image_fixer(path, 1)
+```
+
+
+##  Larger
+```{r}
+image_fixer(path, 10)
+```
+
+##  Larger and Centred
+
+- Chunk option: `fig.align="center"`
+
+```{r, fig.align="center"}
+image_fixer(path, 10)
+```
+
+
+
+# RBA example
+
+```{r}
+path <- "4_Easy_Credit/RBA_2018Jul_ChartPack major-banks-net-interest-margin.jpg"
+```
+
+
+## As Is
+```{r}
+image_fixer(path)
+```
+
+
+##  Smaller
+```{r}
+image_fixer(path, 1)
+```
+
+
+##  Larger
+```{r}
+image_fixer(path, 10)
+```
+
+##  Larger and Centred
+
+- Chunk option: `fig.align="center"`
+
+```{r, fig.align="center"}
+image_fixer(path, 10)
+```
+
+
