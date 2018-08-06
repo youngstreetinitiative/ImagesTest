@@ -249,7 +249,7 @@ image_fixer(path, 10)
 
 
 
-# AFR example
+## AFR example
 
 ```{r}
 path <- "4_Easy_Credit/AFR (2014Jun) Prices indexed to incomes and borrowing capacity.jpg"
